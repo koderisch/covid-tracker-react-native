@@ -105,7 +105,7 @@ class Navigator {
       });
     });
 
-    this.startAssessment(currentPatient, null)
+    this.startAssessment(currentPatient, null);
   }
 
   startAssessment(currentPatient: PatientStateType, assessmentId: string | null) {

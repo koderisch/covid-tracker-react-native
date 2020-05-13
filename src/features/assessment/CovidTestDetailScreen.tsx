@@ -112,7 +112,7 @@ export default class CovidTestDetailScreen extends Component<CovidProps, State> 
       return;
     }
 
-    let postTest = {
+    const postTest = {
       patient: patientId,
       ...(formData.result && { result: formData.result }),
       ...(formData.mechanism === 'other' && { mechanism: formData.mechanismSpecify }),
