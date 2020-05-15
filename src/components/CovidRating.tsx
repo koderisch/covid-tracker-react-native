@@ -18,7 +18,7 @@ type State = {
 const USiOSLink = `https://apps.apple.com/us/app/covid-symptom-study/id1503529611`;
 const UKiOSLink = `https://apps.apple.com/gb/app/covid-symptom-study/id1503529611`;
 const SEiOSLink = `https://apps.apple.com/se/app/covid-symptom-study/id1503529611`;
-const AndroidLink = `market://details?id=${Constants.manifest.android.package}`;
+const AndroidLink = Constants.manifest.android ? `market://details?id=${Constants.manifest.android.package}` : '';
 
 const ModalContainer = (props: any) => (
   <Modal transparent>
