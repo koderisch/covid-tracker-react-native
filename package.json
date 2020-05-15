@@ -30,6 +30,7 @@
     "@types/react-redux": "^7.1.7",
     "@types/yup": "^0.26.33",
     "axios": "^0.19.2",
+    "cors": "^2.8.5",
     "expo": "~36.0.0",
     "expo-font": "^8.0.0",
     "expo-localization": "~8.0.0",
