@@ -14,14 +14,14 @@ const ProgressStatus: React.FC<ProgressProps> = (props) => {
   const progress = (props.step * 100) / props.maxSteps;
   return (
     <View style={styles.progressBar}>
-      <Progress.Bar
+      {/*<Progress.Bar
         progress={progress / 100}
         width={screenWidth - 36}
         color={colors.purple}
         unfilledColor={colors.backgroundFour}
         borderWidth={0}
         height={2}
-      />
+      />*/}
     </View>
   );
 };
