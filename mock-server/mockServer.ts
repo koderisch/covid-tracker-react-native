@@ -8,6 +8,19 @@ const port = 3000;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+// allow cross domain calls to donation providers as well as Angular CLI server
+const cors = require('cors');
+const corsOptions = {
+  origin: [
+    /localhost:.*$/, // for local development only. Will need to add web server address where web app is hosted for cross-domain request to be allowed
+  ],
+  optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+};
+
+app.use(cors(corsOptions));
+
+app.use(express.static('web-build/'));
+
 app.post('/auth/login', (req, res) => {
   return res.status(200).send({
     key: 'abc',
