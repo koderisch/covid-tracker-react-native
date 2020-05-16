@@ -74,7 +74,7 @@ export default class ZoeApp extends Component<object, State> {
     if (!this.state.fontLoaded) return <View />;
 
     return (
-      <Root>
+      <>
         <Header style={{ display: 'none' }}>
           <StatusBar backgroundColor={colors.white} barStyle="dark-content" />
         </Header>
@@ -89,7 +89,7 @@ export default class ZoeApp extends Component<object, State> {
             <Drawer.Screen name="Main" component={this.mainNavStack} />
           </Drawer.Navigator>
         </NavigationContainer>
-      </Root>
+      </>
     );
   }
 
