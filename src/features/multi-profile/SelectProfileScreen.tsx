@@ -146,11 +146,12 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
     width: '100%',
     alignContent: 'stretch',
+    marginLeft: -3,
   },
 
   cardContainer: {
-    width: '45%',
-    margin: 5,
+    width: '50%',
+    padding: 6,
   },
 
   avatar: {
